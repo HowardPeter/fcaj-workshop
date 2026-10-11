@@ -1,59 +1,32 @@
 ---
-title: "Worklog Tuần 1"
-date: 2024-01-01
+title: "Week 1 Worklog"
+date: 2026-10-05
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 1:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Làm quen và thực hành các dịch vụ AWS phục vụ tính toán, cơ sở dữ liệu, triển khai container và kết nối mạng.
+* Thực hành triển khai, mở rộng, giám sát và quản lý tài nguyên AWS.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc thực hiện trong tuần:
 
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --- | --- | --- | --- |
+| 1 | - Tìm hiểu AWS CloudShell và môi trường dòng lệnh tích hợp. <br> - Thực hành sử dụng AWS CLI để quản lý tài nguyên AWS thông qua CloudShell. | 10/05/2026 | 10/05/2026 | [AWS CloudShell](https://000049.awsstudygroup.com/) |
+| 2 | - Tìm hiểu Amazon RDS và dịch vụ cơ sở dữ liệu quan hệ được quản lý. <br> - **Thực hành:** Tạo, cấu hình RDS và tìm hiểu cách kết nối đến cơ sở dữ liệu. | 10/06/2026 | 10/06/2026 | [Amazon RDS](https://000005.awsstudygroup.com/) |
+| 3 | - Tìm hiểu Amazon Lightsail và cách quản lý hạ tầng cloud đơn giản hóa. <br> - **Thực hành:** Triển khai ứng dụng, cấu hình mạng và tìm hiểu các tính năng bảo mật, sao lưu và mở rộng tài nguyên. | 10/07/2026 | 10/07/2026 | [Amazon Lightsail](https://000045.awsstudygroup.com/) |
+| 4 | - Tìm hiểu dịch vụ triển khai container bằng Amazon Lightsail Containers. <br> - **Thực hành:** Xây dựng Docker image, đẩy image lên dịch vụ và triển khai ứng dụng dạng container trên Lightsail. | 10/08/2026 | 10/08/2026 | [Lightsail Containers](https://000046.awsstudygroup.com/) |
+| 5 | - Tìm hiểu EC2 Auto Scaling, cân bằng tải và phân giải DNS hybrid với Route 53. <br> - **Thực hành:** Cấu hình môi trường EC2 Auto Scaling và thiết lập Route 53 Resolver endpoints cùng các quy tắc chuyển tiếp DNS. | 10/09/2026 | 10/09/2026 | [EC2 Auto Scaling](https://000006.awsstudygroup.com/) <br> [Hybrid DNS với Route 53](https://000010.awsstudygroup.com/) |
 
-### Kết quả đạt được tuần 1:
+### Kết quả đạt được trong tuần:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Làm quen với AWS CloudShell và thực hành quản lý tài nguyên cloud bằng AWS CLI.
+* Có kinh nghiệm thực hành tạo và cấu hình Amazon RDS, bao gồm thiết lập kết nối cơ sở dữ liệu.
+* Triển khai ứng dụng bằng Amazon Lightsail và tìm hiểu các cấu hình bảo mật, sao lưu và mở rộng tài nguyên.
+* Xây dựng và triển khai Docker image bằng Amazon Lightsail Containers.
+* Thực hành cấu hình EC2 Auto Scaling và cân bằng tải nhằm cải thiện tính sẵn sàng và khả năng mở rộng của ứng dụng.
+* Hiểu cách tích hợp DNS giữa môi trường nội bộ và AWS thông qua Route 53 Resolver, bao gồm inbound endpoints, outbound endpoints và forwarding rules.
+* Nâng cao kỹ năng triển khai, cấu hình, giám sát và dọn dẹp tài nguyên AWS.
